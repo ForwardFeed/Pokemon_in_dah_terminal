@@ -4,7 +4,7 @@ Print cool Pokemons in the terminal
 ### Installation
 
 ```chmod u+x ./install ./main.sh && ./install```
-i know it takes a long time sorry about that, lazyness pushed me to no update it
+i know it takes a long time sorry about that, lazyness y'know
 
 ### How to use
 
