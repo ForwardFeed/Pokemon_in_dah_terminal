@@ -1,5 +1,5 @@
 # Pokemon_in_dah_terminal
-Print cool Pokemons is the terminal
+Print cool Pokemons in the terminal
 
 ### Installation
 
