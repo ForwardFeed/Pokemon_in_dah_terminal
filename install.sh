@@ -2,6 +2,28 @@
 
 ### Global variables
 prog="Current Progression = "
+full_install_mode=0
+#
+
+### Input Guards
+
+usage(){
+	echo "no args mean light installation"
+	echo "arg --full-install mean the full installation"
+	echo "warning it does take 651mb to make the full install"
+	exit
+}
+if [ -z $1 ]
+then
+	:
+elif [ $1 == "--full-install" ]
+then
+	echo "full install mode choosed, i warn, i don't check space left and it's 651mb"
+	full_install_mode=1
+elif [ $1 == "-help" ] || [ $1 == "--help" ] || [ $1 == "-h" ]
+then
+	usage
+fi
 
 #
 
@@ -111,6 +133,10 @@ then
 	echo "missing dependencies... stopping"
 
 fi
-
+if [ $full_install_mode -eq 1 ]
+then
 installing
+fi
+echo "Seems to have encountered no error, you're ready to launch the script now"
+
 #
